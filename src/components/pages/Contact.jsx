@@ -1,3 +1,5 @@
+import ContactForm from "../ContactForm";
+
 export default function Contact() {
     return (
         <div class="contacts">
@@ -7,6 +9,7 @@ export default function Contact() {
             <p>
                 I'm open to job inquiries, programming questions, or even just making a connection!
             </p>
+            <ContactForm />
             <section>
                 <a href="mailto: evelyneidsath@gmail.com">evelyneidsath@gmail.com</a>
             </section>
