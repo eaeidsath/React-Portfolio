@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import Nav from './Nav';
 import About from './pages/About';
-import ProjectList from './pages/ProjectList';
+/* import ProjectList from './pages/ProjectList'; */
 import Contact from './pages/Contact';
-import Resume from './pages/Resume';
+/* import Resume from './pages/Resume'; */
 import Footer from './Footer';
 
 export default function PortfolioContainer() {
@@ -33,7 +33,7 @@ export default function PortfolioContainer() {
                 <p className="">Full-stack web developer</p>
             </header>
             <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-            <main className=""> {renderPage()}</main>
+            <main> {renderPage()}</main>
             <Footer />
         </div>
     );
