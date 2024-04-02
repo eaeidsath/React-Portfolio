@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import validateEmail from '../../utils/helpers';
+import { validateEmail } from '../utils/helpers';
 
 function ContactForm(props) {
     const [name, setName] = useState('');
@@ -93,6 +93,7 @@ function ContactForm(props) {
                         <p className="required-message">{required}</p>
                     </div>
                 )}
+                <button type="submit">Submit</button>
             </form>
             {errorMessage && (
                 <div>

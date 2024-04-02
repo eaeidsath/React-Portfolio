@@ -2,7 +2,7 @@ import ContactForm from "../ContactForm";
 
 export default function Contact() {
     return (
-        <div class="contacts">
+        <div className="contacts">
             <h4>
                 Contact me
             </h4>
