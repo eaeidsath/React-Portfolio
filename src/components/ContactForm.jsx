@@ -52,8 +52,9 @@ function ContactForm(props) {
     }
 
     return (
-        <div>
+        <div className="mb-3">
             <form className='form' onSubmit={handleFormSubmit}>
+                <div className="mb-3">
                 <input
                     value={name}
                     name="name"
@@ -61,12 +62,15 @@ function ContactForm(props) {
                     onBlur={fieldRequired}
                     type='name'
                     placeholder="name"
+                    className="form-control"
                 />
                 {required && (
                     <div>
                         <p className="required-message">{required}</p>
                     </div>
                 )}
+                </div>
+                <div className="mb-3">
                 <input
                     value={email}
                     name="email"
@@ -74,12 +78,15 @@ function ContactForm(props) {
                     onBlur={fieldRequired}
                     type='email'
                     placeholder="email"
+                    className="form-control"
                 />
                 {required && (
                     <div>
                         <p className="required-message">{required}</p>
                     </div>
                 )}
+                </div>
+                <div className="mb-3">
                 <input
                     value={message}
                     name="message"
@@ -87,13 +94,15 @@ function ContactForm(props) {
                     onBlur={fieldRequired}
                     type='message'
                     placeholder="message"
+                    className="form-control"
                 />
                 {required && (
                     <div>
                         <p className="required-message">{required}</p>
                     </div>
                 )}
-                <button type="submit">Submit</button>
+                </div>
+                <button type="submit" className="btn btn-primary">Submit</button>
             </form>
             {errorMessage && (
                 <div>
