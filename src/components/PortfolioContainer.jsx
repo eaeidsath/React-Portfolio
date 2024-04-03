@@ -29,6 +29,7 @@ export default function PortfolioContainer() {
     return (
         <div>
             <header>
+                <img src='../public/81021761.jpg' className='header-img'></img>
                 <h1 className="">Evelyn Eidsath</h1>
                 <p className="">Full-stack web developer</p>
             </header>
