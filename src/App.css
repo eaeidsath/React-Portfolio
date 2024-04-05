@@ -18,12 +18,89 @@ body {
     background-color: var(--main-color);
 }
 
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 0 15px;
+    background: var(--dark);
+    overflow-y: auto;
+}
+
 .header-img {
+    margin: 15px auto;
+    display: block;
     width: 200px;
-    height: 200px;
-    border-radius: 100px;
+    border-radius: 50%;
+}
+
+#header .profile h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    font-weight: bolder;
+    text-align-last: center;
+    font-family: "Poppins", sans-serif;
+}
+
+#header .profile p {
+    margin: 0;
+    padding: 0;
+    text-align-last: center;
+}
+
+#header .profile .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: var(--light-alt);
+    color: black;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+#header .profile .social-links a:hover {
+    background: var(--light);
+    color: black;
+    text-decoration: none;
+}
+
+.nav-menu {
+    padding: 30px 0 0 0;
+}
+
+.nav-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-menu>ul>li {
+    position: relative;
+    white-space: nowrap;
 }
 
 .about-img {
     height: 80vh;
+}
+
+.nav-menu a,
+.nav-menu a:focus {
+  display: flex;
+  align-items: center;
+  color: #a8a9b4;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
 }

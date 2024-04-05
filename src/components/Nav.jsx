@@ -1,6 +1,6 @@
 function Nav({ currentPage, handlePageChange }) {
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar nav-menu">
             <div className="container-fluid">
                 <ul className="navbar-nav">
                     <li className="nav-item">
