@@ -26,7 +26,7 @@ function ContactForm(props) {
     const handleFormSubmit = (e) => {
         e.preventDefault();
 
-        if(!validateEmail(email)) {
+        if (!validateEmail(email)) {
             setErrorMessage('Email is invalid.');
             return;
         }
@@ -43,7 +43,7 @@ function ContactForm(props) {
 
     const fieldRequired = (e) => {
         const { target } = e;
-        if(!target.value) {
+        if (!target.value) {
             setRequired('This field is required.');
             return;
         }
@@ -55,52 +55,56 @@ function ContactForm(props) {
         <div className="mb-3">
             <form className='form' onSubmit={handleFormSubmit}>
                 <div className="mb-3">
-                <input
-                    value={name}
-                    name="name"
-                    onChange={handleInputChange}
-                    onBlur={fieldRequired}
-                    type='name'
-                    placeholder="name"
-                    className="form-control"
-                />
-                {required && (
-                    <div>
-                        <p className="required-message">{required}</p>
-                    </div>
-                )}
+                    <label htmlFor="name">Name:</label>
+                    <input
+                        value={name}
+                        name="name"
+                        onChange={handleInputChange}
+                        onBlur={fieldRequired}
+                        type='name'
+                        placeholder="name"
+                        className="form-control"
+                    />
+                    {required && (
+                        <div>
+                            <p className="required-message">{required}</p>
+                        </div>
+                    )}
                 </div>
                 <div className="mb-3">
-                <input
-                    value={email}
-                    name="email"
-                    onChange={handleInputChange}
-                    onBlur={fieldRequired}
-                    type='email'
-                    placeholder="email"
-                    className="form-control"
-                />
-                {required && (
-                    <div>
-                        <p className="required-message">{required}</p>
-                    </div>
-                )}
+                    <label htmlFor="email">Email address:</label>
+                    <input
+                        value={email}
+                        name="email"
+                        onChange={handleInputChange}
+                        onBlur={fieldRequired}
+                        type='email'
+                        placeholder="email"
+                        className="form-control"
+                    />
+                    {required && (
+                        <div>
+                            <p className="required-message">{required}</p>
+                        </div>
+                    )}
                 </div>
                 <div className="mb-3">
-                <input
-                    value={message}
-                    name="message"
-                    onChange={handleInputChange}
-                    onBlur={fieldRequired}
-                    type='message'
-                    placeholder="message"
-                    className="form-control"
-                />
-                {required && (
-                    <div>
-                        <p className="required-message">{required}</p>
-                    </div>
-                )}
+                    <label htmlFor="message">Message:</label>
+                    <textarea
+                        value={message}
+                        name="message"
+                        rows="5"
+                        onChange={handleInputChange}
+                        onBlur={fieldRequired}
+                        type='message'
+                        placeholder="message"
+                        className="form-control"
+                    />
+                    {required && (
+                        <div>
+                            <p className="required-message">{required}</p>
+                        </div>
+                    )}
                 </div>
                 <button type="submit" className="btn btn-primary">Submit</button>
             </form>

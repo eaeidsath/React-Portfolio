@@ -32,7 +32,7 @@ export default function PortfolioContainer() {
             <header id='header'>
                 <div className='d-flex flex-column'>
                     <div className='profile'>
-                        <img src='../public/81021761.jpg' className='header-img img-fluid'></img>
+                        <img src='/81021761.jpg' className='header-img img-fluid'></img>
                         <h1>Evelyn Eidsath</h1>
                         <p>Full-stack web developer</p>
                         <div className='social-links text-center'>

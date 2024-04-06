@@ -36,7 +36,7 @@ export default function About() {
                         </p>
                     </div>
                     <div className="col">
-                        <img src="../public/pfp.jpg" className="about-img" alt="Evelyn standing under trees"></img>
+                        <img src="/pfp.jpg" className="about-img" alt="Evelyn standing under trees"></img>
                     </div>
                 </div>
                 <div>
