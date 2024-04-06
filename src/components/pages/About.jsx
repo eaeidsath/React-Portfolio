@@ -6,8 +6,9 @@ export default function About() {
                 <div className="row">
                     <div className="col">
                         <h1 className="section-title">About Me</h1>
+                        <hr></hr>
                         <div className="info-container">
-                            <h3 className="subtitle">Full Stack Web Developer</h3>
+                            <h3 className="subtitle">Bio</h3>
                             <div className="row info">
                                 <div className="col">
                                     <ul>
@@ -32,13 +33,14 @@ export default function About() {
                             </div>
                         </div>
                         <p className="intro">
-                            Hello and welcome to my portfolio. This website as well as all the projects linked here are examples of my web developer experience. I starting learning front-end coding in 2022, and in 2023 I began a course to become certified in full-stack web development. I have gained experience in Javascript and JS related software such as nodeJS, Express, and React. I also have experience using database software including SQL MongoDB. I will continue updating this portfolio as I gain more experience, learn new coding languages, and create new projects.
+                            Hello and welcome to my portfolio. This website as well as all the projects linked here are examples of my web developer experience. I starting learning front-end coding in 2022, and in 2023 I began a course to become certified in full-stack web development. I have gained experience in Javascript and related software such as nodeJS, Express, and React. I also have experience using database software including SQL and MongoDB. I will continue updating this portfolio as I gain more experience, learn new coding languages, and create new projects.
                         </p>
                     </div>
                     <div className="col">
                         <img src="/pfp.jpg" className="about-img" alt="Evelyn standing under trees"></img>
                     </div>
                 </div>
+                <hr></hr>
                 <div>
                     <h3 className="subtitle">Background</h3>
                 </div>
@@ -50,7 +52,7 @@ export default function About() {
                     </p>
                 </div>
                 <p>
-                    Please take a look at my projects by clicking the Projects List tab, and read me resume from the Resume tab. Reach out to me using the sources listed on the contacts page.
+                    Please take a look at my projects by clicking the Projects tab, and get my resume from the Resume page. Reach out to me using the sources listed on the Contact page.
                 </p>
             </div>
         </section>

@@ -4,6 +4,7 @@
     --neutral: #4a5571;
     --light: #feeafa;
     --light-alt: #dee2ff;
+    --highlight: #d523ab;
 }
 
 * {
@@ -70,7 +71,7 @@ body {
 }
 
 #header .profile .social-links a:hover {
-    background: #d523ab;
+    background: var(--highlight);
     color: var(--dark);
     text-decoration: none;
 }
@@ -109,19 +110,12 @@ main {
     margin-left: 300px;
 }
 
-.container {
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
 section {
-    padding: 60px 0px;
     overflow: hidden;
 }
 
-
 .container {
-    padding: 60px 0;
+    padding: 60px 30px 0px 30px;
     margin-left: 30px;
     overflow: hidden;
 }
@@ -158,6 +152,10 @@ section {
     margin-top: 60px;
 }
 
+hr {
+    border-top: 4px solid var(--dark);
+}
+
 .background {
     line-height: 40px;
 }
@@ -166,16 +164,25 @@ section {
     position: relative;
     width: 100%;
     max-width: 600px;
-    height: 400px;
+    height: 45vh;
     margin: 30px;
     background-color: #4a5571;
     border-radius: 5%;
 }
 
+
+
+.card-title {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--light-alt);
+}
+
 .project-img {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 30vh;
 }
 
 .project-links {
@@ -190,6 +197,28 @@ section {
     justify-content: center;
 }
 
+.project .project-wrap::before {
+    content: "";
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+}
+
+.project .project-wrap:hover::before {
+    opacity: 1;
+}
+
+.project-wrap:hover .project-links {
+    opacity: 1;
+    bottom: 0;
+}
+
 .project-links a {
     color: #fff;
     font-size: 28px;
@@ -200,18 +229,12 @@ section {
 }
 
 .project-links a:hover {
-    background: var(--dark);
+    background: var(--highlight);
 }
 
-:hover::before {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 1;
-}
-
-.project-wrap:hover .project-links {
-    opacity: 1;
-    bottom: 0;
+footer {
+    margin-left: 300px;
+    font-size: 16px;
+    display: flex;
+    justify-content:center
 }

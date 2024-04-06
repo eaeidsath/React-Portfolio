@@ -1,10 +1,10 @@
 const Footer = () => {
     return (
-        <footer className="">
-            <div className="">
-                <h4>
-                    Made by Evelyn Eidsath.
-                </h4>
+        <footer>
+            <div>
+                <p>
+                Made by Evelyn Eidsath. Artwork by <a href="https://instagram.com/prismiridescent" target="_blank" rel="noopener noreferrer">Prism</a>
+                </p>
             </div>
         </footer>
     );
