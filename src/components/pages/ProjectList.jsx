@@ -1,6 +1,6 @@
 export default function ProjectList() {
     return (
-        <div>
+        <div className="container">
             <section className="card">
                 <div className="card-body">
                     <img className="card-img-top"></img>

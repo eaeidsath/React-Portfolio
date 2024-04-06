@@ -1,6 +1,6 @@
 export default function Resume() {
     return (
-        <div>
+        <div className="container">
             <h2>
                 <a>Download my resume by clicking here.</a>
             </h2>

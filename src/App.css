@@ -1,7 +1,7 @@
 :root {
     --main-color: #cbc0d3;
-    --dark: #8e9aaf;
-    --neutral: #efd3d7;
+    --dark: #1d2b4d;
+    --neutral: #4a5571;
     --light: #feeafa;
     --light-alt: #dee2ff;
 }
@@ -15,7 +15,7 @@
 }
 
 body {
-    background-color: var(--main-color);
+    background-color: #d2d5db !important;
 }
 
 #header {
@@ -28,7 +28,7 @@ body {
     z-index: 9997;
     transition: all 0.5s;
     padding: 0 15px;
-    background: var(--dark);
+    background: var(--neutral);
     overflow-y: auto;
 }
 
@@ -58,7 +58,7 @@ body {
     font-size: 18px;
     display: inline-block;
     background: var(--light-alt);
-    color: black;
+    color: var(--dark);
     line-height: 1;
     padding: 8px 0;
     margin-right: 4px;
@@ -70,8 +70,8 @@ body {
 }
 
 #header .profile .social-links a:hover {
-    background: var(--light);
-    color: black;
+    background: #d523ab;
+    color: var(--dark);
     text-decoration: none;
 }
 
@@ -91,16 +91,73 @@ body {
 }
 
 .about-img {
-    height: 80vh;
+    height: 1000px;
 }
 
 .nav-menu a,
 .nav-menu a:focus {
-  display: flex;
-  align-items: center;
-  color: #a8a9b4;
-  padding: 12px 15px;
-  margin-bottom: 8px;
-  transition: 0.3s;
-  font-size: 15px;
+    display: flex;
+    align-items: center;
+    color: #a8a9b4;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+main {
+    margin-left: 300px;
+}
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+section {
+    padding: 60px 0px;
+    overflow: hidden;
+}
+
+
+.container {
+    padding: 60px 0;
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+.section-title {
+    padding-bottom: 30px;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.info-container {
+    background-color: #e8eaed;
+    padding: 10px;
+}
+
+.info {
+    list-style: none;
+}
+
+.info div ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.intro {
+    line-height: 40px;
+    margin-top: 60px;
+}
+
+.background {
+    line-height: 40px;
 }
