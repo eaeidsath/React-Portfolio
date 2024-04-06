@@ -1,9 +1,10 @@
 export default function Resume() {
     return (
         <div className="container">
-            <h2>
-                <a>Download my resume by clicking here.</a>
+            <h2 className="resume">
+                <a href="#">Download my resume by clicking here.</a>
             </h2>
+            <div className="skills">
             <h3>
                 Front-end Skills and Softwares
             </h3>
@@ -44,6 +45,7 @@ export default function Resume() {
                     Developing and validating testing suites that address all browsers and devices
                 </li>
             </ul>
+            </div>
         </div>
     );
 }

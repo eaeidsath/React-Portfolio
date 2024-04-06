@@ -118,6 +118,7 @@ section {
     padding: 60px 30px 0px 30px;
     margin-left: 30px;
     overflow: hidden;
+    min-height: 100vh;
 }
 
 .section-title {
@@ -166,7 +167,7 @@ hr {
     max-width: 600px;
     height: 45vh;
     margin: 30px;
-    background-color: #4a5571;
+    background-color: var(--neutral);
     border-radius: 5%;
 }
 
@@ -232,9 +233,26 @@ hr {
     background: var(--highlight);
 }
 
+.resume {
+    background-color: var(--main-color);
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.resume a:hover {
+    color: var(--highlight);
+}
+
+.skills {
+    margin: 30px;
+    padding: 20px;
+}
+
 footer {
     margin-left: 300px;
+    margin-top: 40px;
     font-size: 16px;
     display: flex;
-    justify-content:center
+    justify-content:center;
 }
