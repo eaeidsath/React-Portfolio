@@ -14,11 +14,11 @@ export default function ProjectList() {
                 </section>
                 <section className="col project">
                     <div className="project-wrap">
-                    <h4 className="project-title">Tech Blog</h4>
-                        <img src="/techblog.png" className="project-img"></img>
+                        <h4 className="project-title">Weather Dashboard</h4>
+                        <img src="/weatherdashboard.png" className="project-img"></img>
                         <div className="project-links">
-                        <a href="#"><box-icon name="link" color="white"></box-icon></a>
-                        <a href="https://github.com/eaeidsath/Tech-Blog" target="_blank" rel="noopener noreferrer"><box-icon type="logo" name="github" color="white"></box-icon></a>
+                        <a href="https://eaeidsath.github.io/Weather-Dashboard/" target="_blank" rel="noopener noreferrer"><box-icon name="link" color="white"></box-icon></a>
+                        <a href="https://github.com/eaeidsath/Weather-Dashboard" target="_blank" rel="noopener noreferrer"><box-icon type="logo" name="github" color="white"></box-icon></a>
                         </div>
                     </div>
                 </section>
@@ -59,11 +59,11 @@ export default function ProjectList() {
                 </section>
                 <section className="col project">
                     <div className="project-wrap">
-                        <h4 className="project-title">Weather Dashboard</h4>
-                        <img src="/weatherdashboard.png" className="project-img"></img>
+                    <h4 className="project-title">Tech Blog</h4>
+                        <img src="/techblog.png" className="project-img"></img>
                         <div className="project-links">
-                        <a href="https://eaeidsath.github.io/Weather-Dashboard/" target="_blank" rel="noopener noreferrer"><box-icon name="link" color="white"></box-icon></a>
-                        <a href="https://github.com/eaeidsath/Weather-Dashboard" target="_blank" rel="noopener noreferrer"><box-icon type="logo" name="github" color="white"></box-icon></a>
+                        <a href="https://github.com/eaeidsath/Tech-Blog"><box-icon name="link" color="white"></box-icon></a>
+                        <a href="https://github.com/eaeidsath/Tech-Blog" target="_blank" rel="noopener noreferrer"><box-icon type="logo" name="github" color="white"></box-icon></a>
                         </div>
                     </div>
                 </section>
