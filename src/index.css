@@ -91,10 +91,6 @@ body {
     white-space: nowrap;
 }
 
-.about-img {
-    height: 1000px;
-}
-
 .nav-menu a,
 .nav-menu a:focus {
     display: flex;
@@ -136,6 +132,7 @@ section {
 .info-container {
     background-color: #e8eaed;
     padding: 10px;
+    border: 3px solid #1d2b4d;
 }
 
 .info {
@@ -146,6 +143,11 @@ section {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+}
+
+.about-img {
+    height: 1000px;
+    border: 3px solid #1d2b4d;
 }
 
 .intro {
@@ -173,9 +175,10 @@ hr {
 
 
 
-.card-title {
+.project-title {
     font-size: 26px;
     font-weight: bold;
+    padding-top: 10px;
     text-align: center;
     color: var(--light-alt);
 }

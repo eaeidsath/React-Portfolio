@@ -2,7 +2,7 @@ export default function Resume() {
     return (
         <div className="container">
             <h2 className="resume">
-                <a href="#">Download my resume by clicking here.</a>
+                <a href="/EidsathResume.pdf" download>Download my resume by clicking here.</a>
             </h2>
             <div className="skills">
             <h3>

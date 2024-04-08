@@ -39,6 +39,7 @@ export default function PortfolioContainer() {
                             <a href='https://www.linkedin.com/in/evelyn-eidsath-915b9b226/'><box-icon type="logo" name="linkedin-square"></box-icon></a>
                             <a href='https://github.com/eaeidsath'><box-icon type="logo" name="github"></box-icon></a>
                             <a href="mailto: evelyneidsath@gmail.com"><box-icon type="logo" name="gmail"></box-icon></a>
+                            <a href="https://stackoverflow.com/users/24130733/evelyn"><box-icon type="logo" name="stack-overflow"></box-icon></a>
                         </div>
                     </div>
                 </div>
