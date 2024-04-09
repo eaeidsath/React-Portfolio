@@ -259,5 +259,29 @@ footer {
     margin-top: 40px;
     font-size: 16px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
+}
+
+@media (max-width: 1199px) {
+    #header {
+        width: 100px;
+    }
+
+    main {
+        margin-left: 100px;
+    }
+
+    .container,
+    .container-fluid {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .about-img {
+        height: 500px;
+    }
+
+    .project {
+        max-width: 200px;
+    }
 }
